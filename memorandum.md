@@ -22,3 +22,15 @@ https://qiita.com/yohekan/items/9f556a0054e4071ddef0#_reference-c04cb0ba55b795d3
 * ミスを発見
   * Build.csには、出力先のパスが記載されている。個々を修正していなかったため、期待していたパスに出力されていなかった模様。
 * gitに紐付けたローカルレポジトリ内で、Jenkinsビルドできた。
+
+### 20180202
+* gitとjenkinsの連携で不明なことが多く達成できず
+```
+Payload URL
+http://[USER_ID]:[API_TOKEN]@[JENKINS_HOST]/job/[JOB_NAME]/[build|buildWithParameters]?token=[TOKEN_NAME]
+例) http://admin:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@jenkins.example.com/job/webhook_job/buildWithParameters?token=hogehoge
+Content type
+application/x-www-form-urlencoded
+```
+
+このあたり意味わかんねーよ!！
